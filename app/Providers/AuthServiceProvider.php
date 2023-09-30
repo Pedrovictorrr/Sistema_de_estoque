@@ -27,7 +27,6 @@ class AuthServiceProvider extends ServiceProvider
         User::class => UserPolicy::class,
         Permission::class => PermissionPolicy::class,
         Role::class => RolePolicy::class,
-        instrucao::class => InstrucaoPolicy::class,
         ActivityLog::class => ActivityPolicy::class,
         Releases::class => ReleasePolicy::class,
     ];

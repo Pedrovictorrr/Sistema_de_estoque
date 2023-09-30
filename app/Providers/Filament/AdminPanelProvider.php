@@ -38,7 +38,7 @@ class AdminPanelProvider extends PanelProvider
             ->passwordReset(ResetPassword::class)
             ->maxContentWidth('full')
             ->colors([
-                'primary' => Color::Sky,
+                'primary' => Color::Orange,
                 'danger' => Color::Red,
                 'gray' => Color::Zinc,
                 'info' => Color::Blue,
@@ -90,6 +90,9 @@ class AdminPanelProvider extends PanelProvider
             ->authGuard('web')
             ->authPasswordBroker('users')
             ->navigationGroups([
+                'Pedidos',
+                'Produtos',
+                'Configurações',
                 'Usuários',
                 'W2O',
             ])
